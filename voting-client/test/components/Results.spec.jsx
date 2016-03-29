@@ -2,7 +2,7 @@ import React from 'react';
 import {expect} from 'chai';
 import {shallow} from 'enzyme';
 import {List, Map} from 'immutable';
-import Results from '../../src/components/Results';
+import {Results} from '../../src/components/Results';
 import Winner from '../../src/components/Winner';
 
 

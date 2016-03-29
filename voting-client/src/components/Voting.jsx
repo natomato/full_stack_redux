@@ -1,10 +1,11 @@
 import React from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
+import {connect} from 'react-redux';
 import Vote from './Vote.jsx';
 import Winner from './Winner.jsx';
 
-// This class is acting like a router
-export default class Voting extends React.Component {
+//TODO: think about this, it looks like a router. Why not use a router?
+export class Voting extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -21,3 +22,12 @@ export default class Voting extends React.Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return {
+    pair: state.getIn(['vote', 'pair']),
+    winner: state.get('winner')
+  }
+}
+
+export const VotingContainer = connect(mapStateToProps)(Voting);

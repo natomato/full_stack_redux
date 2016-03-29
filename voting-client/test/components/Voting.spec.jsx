@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { expect } from 'chai';
-import Voting from '../../src/components/Voting';
+import {Voting} from '../../src/components/Voting';
 import {List} from 'immutable';
 import { mount, render, shallow } from 'enzyme';
 
