@@ -14,21 +14,21 @@ Clone this repo and navigate to the voting-server folder where you can start the
 If nothing loads, check the console of the webpage and see the error messages.
 
 Here is an example:
-```js
-git clone 'https://github.com/natomato/full_stack_redux.git'
+```sh
+git clone https://github.com/natomato/full_stack_redux.git
 cd ./full_stack_redux/voting-server
-npm install //the server's dependencies
+npm install #the server's dependencies
 npm start
 
-// You should see this in your terminal
-// > voting-server@1.0.0 start /Users/xxxx/Programming/tutorials/full_stack_redux/voting-server
-// > babel-node index.js
+# You should see this in your terminal
+# > voting-server@1.0.0 start /Users/xxxx/Programming/tutorials/full_stack_redux/voting-server
+# > babel-node index.js
 
 
 cd ./full_stack_redux/voting-client
-npm install //the client's dependencies
-webpack-dev-server
+npm install #the client's dependencies
+webpack-dev-server #if installed globally
 
-// You should see this in your terminal
-//webpack: bundle is now VALID.
+# You should see this in your terminal
+# > webpack: bundle is now VALID.
 ```
