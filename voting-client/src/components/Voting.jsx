@@ -3,6 +3,7 @@ import shallowCompare from 'react-addons-shallow-compare';
 import {connect} from 'react-redux';
 import Vote from './Vote.jsx';
 import Winner from './Winner.jsx';
+import * as actionCreators from '../action_creators';
 
 //TODO: think about this, it looks like a router. Why not use a router?
 export class Voting extends React.Component {
@@ -31,4 +32,4 @@ function mapStateToProps(state) {
   }
 }
 
-export const VotingContainer = connect(mapStateToProps)(Voting);
+export const VotingContainer = connect(mapStateToProps, actionCreators)(Voting);
